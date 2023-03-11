@@ -1,25 +1,14 @@
 // Main Site Settings
 export const settings = {
     site: "https://douyixuan.github.io",
-    title: "Douyixuan",
+    title: "兜忆轩",
     description: "Too lazy",
 };
 
 // Main Menu
 export const menu = [
     { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "Contact", link: "/contact" },
-    {
-        name: "GitHub",
-        link: "https://github.com/brianmaierjr/long-haul-astro",
-        external: true,
-    },
-    {
-        name: "Download",
-        link: "https://github.com/brianmaierjr/long-haul-asto/archive/main.zip",
-        external: true,
-    },
+    { name: "About Long Haul", link: "/about" },
 ];
 
 // Footer Social Links
