@@ -1,15 +1,19 @@
-import { defineConfig } from 'astro/config';
-import { settings } from './src/data/settings';
+import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import mdx from "@astrojs/mdx";
+import compress from "astro-compress";
+import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
-  site: settings.site,
-  integrations: [sitemap(), mdx()],
-  vite: {
-    ssr: {
-      external: ["svgo"]
-    }
-  }
+    site: "https://long-haul-astro.netlify.app",
+    integrations: [sitemap(), compress(), robotsTxt()],
+    markdown: {
+        shikiConfig: {
+            // Choose from Shiki's built-in themes (or add your own)
+            // https://github.com/shikijs/shiki/blob/main/docs/themes.md
+            theme: "nord",
+            // Enable word wrap to prevent horizontal scrolling
+            wrap: true,
+        },
+    },
 });
