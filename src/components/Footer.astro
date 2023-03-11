@@ -1,73 +1,49 @@
 ---
-import { settings } from "../data/settings";
-import Container from "./Container.astro";
-import SocialList from './SocialList.astro';
+import SocialMenu from "./SocialMenu.astro";
+const date = new Date();
 ---
 
-<footer>
-  <Container>
-    <div class="footer-links__grid">
-      <ul>
-        <li><strong>Douyixuan</strong></li>
-        <li>About</li>
-        <li>Blog</li>
-      </ul>
+<footer class="footer">
+  <div class="footer-container container">
+    <div class="copyright">
+      <p>
+        &copy; {date.getFullYear()}
+        <a href="http://brianmaierjr.com">Brian Maier Jr.</a> Powered by
+        <a href="http://astro.build" target="_blank">Astro</a>
+      </p>
     </div>
-    <div class="footer-bottom__container">
-      <p>&copy; {new Date().getFullYear()} {settings.name}</p>
-      <SocialList />
-    </div>
-  </Container>
+    <SocialMenu />
+  </div>
 </footer>
 
-<style>
-  footer {
-    position: relative;
-    min-height: 200px;
-    background-color: var(--theme-footer-background);
-    color: var(--theme-on-footer-background);
-  }
-  .footer-links__grid {
-    padding: 10vh 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-  .footer-links__grid ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .footer-links__grid ul li:first-of-type {
-    margin-bottom: 0.5rem;
-  }
-  .footer-links__grid ul li strong {
-    font-weight: 900;
-  }
-  .footer-bottom__container {
-    position: relative;
-    bottom: 0;
-    padding: 0 0 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--step--2);
+<style lang="scss">
+  @use "../styles/base/_config.scss" as *;
+  .footer {
+    text-align: center;
+    padding: 2rem 0;
+    clear: both;
+    font-size: var(--step--1);
+    margin-top: var(--space-l);
   }
 
-  @media(max-width: 768px) {
-    .footer-links__grid {
-      grid-template-columns: repeat(2, 1fr);
+  .copyright p {
+    margin-bottom: var(--space-xs);
+
+    @media (min-width: 800px) {
+      margin-bottom: 0;
     }
   }
-  @media(max-width: 480px) {
-    .footer-links__grid {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .footer-bottom__container {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
+
+  .footer-container {
+    border-top: 4px solid var(--subtle-color);
+    padding-top: var(--space-s);
+    max-width: 90%;
+
+    @media (min-width: 800px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
     }
   }
 </style>

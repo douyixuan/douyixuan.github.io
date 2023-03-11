@@ -1,99 +1,75 @@
 ---
-import Layout from './Page.astro';
-import Container from '../components/Container.astro';
-import { formatDate, slugify } from '../utils/helpers';
+import { formatDate } from "../utils/helpers";
+import Layout from "./Layout.astro";
+import { settings } from "../data/settings";
 
 const { frontmatter } = Astro.props;
 
 const seo = {
-  title: frontmatter.title,
-  description: frontmatter.description,
-  image: frontmatter.image,
+    title: frontmatter.title + " | " + settings.title,
+    description: frontmatter.description,
+    image: frontmatter.image,
 };
 ---
 
 <Layout seo={seo}>
-  <Container>
-    <article class="post-content__article">
-      <div class="post-content__top fade-in">
+    <article>
         {
-          frontmatter.category && (
-            <p class="post-content__category">
-              <a href={`/blog/category/${slugify(frontmatter.category)}`}>
-                {frontmatter.category}
-              </a>
-            </p>
-          )
+            frontmatter.image && (
+                <div class="featured-image">
+                    <img src={`/${frontmatter.image}`} alt="" />
+                </div>
+            )
         }
-        <h1 class="post-content__title">{frontmatter.title}</h1>
-        <p class="post-content__date">
-          <time>{formatDate(frontmatter.publishedAt)}</time>
-        </p>
-        <!-- Hopefully we'll be able to use Astro's image integration for this soon -->
-        {
-          frontmatter.image && (
-            <picture>
-              <source srcset={`${frontmatter.image}.webp`} type="image/webp" />
-              <img
-                width="1200"
-                height="630"
-                class="post-content__img"
-                loading="eager"
-                src={`${frontmatter.image}.png`}
-                alt={frontmatter.alt}
-              />
-            </picture>
-          )
-        }
-      </div>
-      <div class="post-content__content flow fade-in">
-        <slot />
-      </div>
+        <div class="content-grid flow">
+            <header class="post-header">
+                <h1 class="post-header__title">{frontmatter.title}</h1>
+                <p class="post-header__meta">
+                    <time datetime={frontmatter.date} class="post-header__date">
+                        {formatDate(frontmatter.date)}
+                    </time>
+                </p>
+            </header>
+            <slot />
+        </div>
     </article>
-  </Container>
 </Layout>
 
-<style>
-  .post-content__top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .post-content__category {
-    padding: 0.5rem 1rem;
-    font-size: var(--step--1);
-    background-color: var(--theme-surface-1);
-    border-radius: 2rem;
-  }
-  .post-content__category a {
-    text-decoration: none;
-  }
-  .post-content__category a:hover {
-    opacity: 0.8;
-  }
-  .post-content__article {
-    padding: 5vh 0;
-  }
-  .post-content__title {
-    margin: 1rem auto;
-    font-size: var(--step-5);
-  }
-  .post-content__date {
-    margin: 0 auto;
-    font-size: var(--step--1);
-    color: var(--color-gray);
-    font-style: italic;
-  }
-  .post-content__img {
-    margin: 3rem 0 2rem 0;
-    max-width: 100%;
-    height: auto;
-    border-radius: 2rem;
-  }
-  .post-content__content :global(img) {
-    display: block;
-    margin: 2rem auto;
-    max-width: 100%;
-  }
+<style lang="scss">
+    .featured-image {
+        grid-column: 1 / -1;
+        position: relative;
+        margin-top: var(--space-2xs);
+        clip-path: polygon(0 var(--space-s), 100% 0, 100% 100%, 0 100%);
+        text-align: center;
+        margin-bottom: var(--space-l);
+
+        @media (min-width: 800px) {
+            clip-path: polygon(0 var(--space-2xl), 100% 0, 100% 100%, 0 100%);
+        }
+
+        img {
+            width: 100%;
+            max-width: 1000px;
+            margin-inline: auto;
+            margin-bottom: 0;
+        }
+    }
+
+    .post-header__title {
+        margin: var(--space-s) auto var(--space-2xs);
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .post-header__meta {
+        text-align: center;
+        color: lighten(black, 50%);
+        font-family: var(--sans-serif);
+        font-weight: 300;
+    }
+
+    .post-header {
+        margin-bottom: var(--space-m);
+    }
 </style>

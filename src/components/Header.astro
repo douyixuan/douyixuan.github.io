@@ -1,52 +1,124 @@
 ---
-import Container from './Container.astro';
-import Logo from './Logo.astro';
-import SocialList from './SocialList.astro';
+import { settings } from "../data/settings";
+import MenuMain from "./MenuMain.astro";
+import ToggleColorModeButton from "./ToggleColorModeButton.astro";
+import ToggleMenuButton from "./ToggleMenuButton.astro";
 ---
 
-<script>
-  import './ThemeToggleButton/theme-toggle-button'
-</script>
+<header class="header">
+    <div class="container">
+        {
+            // H1 on homepage, P on other pages
+            Astro.url.pathname == "/" && (
+                <h1 class="header__title">
+                    <a href="/">{settings.title}</a>
+                </h1>
+            )
+        }
+        {
+            Astro.url.pathname != "/" && (
+                <p class="header__title">
+                    <a href="/">{settings.title}</a>
+                </p>
+            )
+        }
 
-<header>
-  <Container>
-    <nav>
-      <a class="header__logo" href="/" title="Navigate Home">
-        <Logo />
-      </a>
-      <SocialList />
-    </nav>
-  </Container>
-  <div class="theme-toggle__container">
-    <!-- I was running into some issues with the Lit integration so I'm using it as a client script for now -->
-    <theme-toggle-button></theme-toggle-button>
-  </div>
+        <nav>
+            <MenuMain />
+            <ToggleColorModeButton />
+            <ToggleMenuButton icon="ic:baseline-menu" />
+        </nav>
+    </div>
 </header>
 
-<style>
-  header {
-    height: var(--theme-header-height, 64px);
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--theme-primary-light);
-  }
-  nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header__logo {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
-  .theme-toggle__container {
-    margin-left: 1rem;
-    position: relative;
-    right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+<style lang="scss">
+    @use "../styles/base/_config.scss" as *;
+
+    .header {
+        background-color: var(--primary-color);
+        background-image: url("/images/touring.webp");
+        background-size: cover;
+        background-position: center center;
+        color: white;
+        padding-top: var(--space-m);
+        padding-bottom: var(--space-l);
+        margin-bottom: var(--space-l);
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% calc(100% - var(--space-s)),
+            0 100%
+        );
+
+        @media (min-width: 800px) {
+            position: relative;
+            padding-block: var(--space-3xl);
+            clip-path: polygon(
+                0 0,
+                100% 0,
+                100% calc(100% - var(--space-2xl)),
+                0 100%
+            );
+        }
+
+        nav {
+            .no-list {
+                display: none;
+            }
+        }
+    }
+
+    :global(.header__title) {
+        margin: 0;
+        font-size: var(--step-0);
+        font-family: var(--sans-serif);
+        font-weight: 900;
+        text-transform: uppercase;
+
+        @media (min-width: 800px) {
+            font-size: var(--step-5);
+            padding-bottom: var(--space-xs);
+            line-height: 1;
+            letter-spacing: -1.5px;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+                color: var(--white);
+            }
+
+            &:focus {
+                outline-color: currentColor;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-3xs);
+
+        @media (min-width: 800px) {
+            gap: var(--space-xs);
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 800px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 </style>
