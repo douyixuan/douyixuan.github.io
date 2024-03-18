@@ -1,0 +1,7 @@
+baseURL: https://douyixuan.github.io/
+languageCode: en-us
+title: 兜忆轩
+theme: ["PaperMod"]
+module:
+  imports:
+  - path: github.com/adityatelange/hugo-PaperMod
