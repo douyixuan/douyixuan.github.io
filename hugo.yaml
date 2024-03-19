@@ -1,7 +1,60 @@
 baseURL: https://douyixuan.github.io/
+title: Cedric's
 languageCode: en-us
-title: 兜忆轩
+paginate: 5
 theme: ["PaperMod"]
 module:
   imports:
   - path: github.com/adityatelange/hugo-PaperMod
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: ""
+  author: 兜忆轩
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+
+  # ShowShareButtons: true
+  # disableSpecial1stPost: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  # ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  # comments: false
+  images: ["images/papermod-cover.png"]
+
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: "#"
+    imageTitle: my image
+    # imageWidth: 120
+    # imageHeight: 120
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+
+  homeInfoParams:
+    Title: "兜忆轩"
+    Content: >
+      👋 Welcome to my personal place!
+
+      - ⛳️ I am a programmer with some experience in HPC and Compiler.
+
+      - 👍 I love open source culture and I'm getting involved.
+
+      - 💭 I hope everyone can have a decent life without [working like a slave](https://www.digitalhistory.uh.edu/disp_textbook.cfm?smtid=2&psid=3041#:~:text=On%20a%20typical%20plantation%2C%20slaves,or%2016%20hours%20a%20day.).
