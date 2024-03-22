@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cedric&#39;s</title>
-    <link>http://localhost:1313/</link>
+    <link>https://douyixuan.github.io/</link>
     <description>Recent content on Cedric&#39;s</description>
     <image>
       <title>Cedric&#39;s</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <url>https://douyixuan.github.io/images/papermod-cover.png</url>
+      <link>https://douyixuan.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Mar 2024 15:54:35 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://douyixuan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hi</title>
-      <link>http://localhost:1313/posts/cpp/byexample/hi/</link>
+      <link>https://douyixuan.github.io/posts/cpp/byexample/hi/</link>
       <pubDate>Mon, 18 Mar 2024 15:54:35 +0800</pubDate>
-      <guid>http://localhost:1313/posts/cpp/byexample/hi/</guid>
+      <guid>https://douyixuan.github.io/posts/cpp/byexample/hi/</guid>
       <description>hello world
 #include &amp;lt;iostream&amp;gt; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;hi&amp;#34; &amp;lt;&amp;lt; std::endl; } </description>
     </item>
     <item>
       <title>Showoff</title>
-      <link>http://localhost:1313/posts/cpp/showoff/</link>
+      <link>https://douyixuan.github.io/posts/cpp/showoff/</link>
       <pubDate>Mon, 18 Mar 2024 15:39:54 +0800</pubDate>
-      <guid>http://localhost:1313/posts/cpp/showoff/</guid>
+      <guid>https://douyixuan.github.io/posts/cpp/showoff/</guid>
       <description>This is a showoff direction for the cool cpper.</description>
     </item>
     <item>
       <title>cpp: applications</title>
-      <link>http://localhost:1313/posts/cpp/application/</link>
+      <link>https://douyixuan.github.io/posts/cpp/application/</link>
       <pubDate>Sun, 14 Jan 2024 07:07:14 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cpp/application/</guid>
+      <guid>https://douyixuan.github.io/posts/cpp/application/</guid>
       <description>cpp 目前被应用在以下一些领域中。
 游戏开发：cpp 是游戏开发中最常用的编程语言之一。它能够优化资源、提供多人联机功能，并且适用于开发3D游戏。著名的 UE 引擎。
 图形用户界面（GUI）应用程序：许多常用的 GUI 应用程序，如 Adobe 系统的 Illustrator 和 Photoshop，以及微软的 Win Amp 媒体播放器都是使用 cpp 开发的。
@@ -44,15 +44,6 @@
 嵌入式系统：各种嵌入式系统，如智能手表和医疗设备系统，都使用 cpp 进行编程，因为它更接近硬件级别，并且可以提供许多低级功能调用。
 企业软件：cpp 用于开发许多企业软件，以及高级应用程序，如飞行模拟和雷达处理。
 库：许多高级数学计算库使用 cpp 作为核心编程语言。cpp 比大多数其他编程语言更快，并且支持并发，因此在需要速度和并发性的应用程序中，cpp 是最受欢迎的开发语言之一。</description>
-    </item>
-    <item>
-      <title>cpp: what can I do with it</title>
-      <link>http://localhost:1313/posts/cpp/what-can-i-do-with-it/</link>
-      <pubDate>Sun, 14 Jan 2024 07:07:07 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cpp/what-can-i-do-with-it/</guid>
-      <description>cpp 是我最开始学习的编程语言，最开始只学到了点皮毛，其实就是 c + class。懂得了面向对象的概念，但是对于多态、封装、继承都没怎么接触。学习数据结构和算法也是使用 cpp，这个时候开始接触 STL，对于 STL 的边界还是没有概念。至于 cpp 的泛型编程、RAII、异常处理、多线程，都是在煜哥的带领下接触到的。知道了 cppreference、 effective cpp，至于学了 cpp，除了能用它来做算法题，一点也没想过用 cpp 可以来做什么。
-cpp 目前可以用来干什么呢？ 作为一个系统级编程语言，加上历史悠久，目前 cpp 已经应用在许多领域，包括游戏开发、图形用户界面（GUI）应用程序、数据库管理系统、操作系统、浏览器、云计算和分布式系统、编译器、嵌入式系统、企业软件和库。
-cpp 应用列表</description>
     </item>
   </channel>
 </rss>
