@@ -1,8 +1,12 @@
-+++
-title = 'cpp: what can I do with it'
-date = 2024-01-14T07:07:07+01:00
-draft = false
-+++
+---
+title: 'cpp: what can I do with it'
+date: 2024-01-14T07:07:07+01:00
+draft: false
+tags: 
+  - cpp
+categories:
+  - cpp
+---
 
 cpp 是我最开始学习的编程语言，最开始只学到了点皮毛，其实就是 c + class。懂得了面向对象的概念，但是对于多态、封装、继承都没怎么接触。学习数据结构和算法也是使用 cpp，这个时候开始接触 STL，对于 STL 的边界还是没有概念。至于 cpp 的泛型编程、RAII、异常处理、多线程，都是在煜哥的带领下接触到的。知道了 cppreference、 effective cpp，至于学了 cpp，除了能用它来做算法题，一点也没想过用 cpp 可以来做什么。
 

@@ -1,8 +1,12 @@
-+++
-title = 'cpp: applications'
-date = 2024-01-14T07:07:14+01:00
-draft = false
-+++
+---
+title: 'cpp: applications'
+date: 2024-01-14T07:07:14+01:00
+draft: false
+tags: 
+  - cpp
+categories:
+  - cpp
+---
 
 cpp 目前被应用在以下一些领域中。
 

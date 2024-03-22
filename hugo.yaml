@@ -7,6 +7,13 @@ module:
   imports:
   - path: github.com/adityatelange/hugo-PaperMod
 
+menu:
+  main:
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+
 outputs:
   home:
     - HTML
@@ -16,7 +23,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: ""
-  author: 兜忆轩
+  author: Cedric
 
   defaultTheme: auto
   # disableThemeToggle: true
