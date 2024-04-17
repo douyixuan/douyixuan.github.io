@@ -1,2 +1,0 @@
-vim
-:source hello.vim
