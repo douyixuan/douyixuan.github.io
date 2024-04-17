@@ -1,5 +1,6 @@
 echo 'boolean options'
 set number
+" there will be two space in front of the output
 set number?
 
 set nonumber
