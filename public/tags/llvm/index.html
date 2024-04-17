@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Cpp | Cedric&#39;s</title>
+<title>Llvm | Cedric&#39;s</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Cedric">
-<link rel="canonical" href="https://douyixuan.github.io/tags/cpp/">
+<link rel="canonical" href="https://douyixuan.github.io/tags/llvm/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://douyixuan.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://douyixuan.github.io/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="https://douyixuan.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://douyixuan.github.io/tags/cpp/index.xml">
-<link rel="alternate" hreflang="en" href="https://douyixuan.github.io/tags/cpp/">
+<link rel="alternate" type="application/rss+xml" href="https://douyixuan.github.io/tags/llvm/index.xml">
+<link rel="alternate" hreflang="en" href="https://douyixuan.github.io/tags/llvm/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,16 +59,16 @@
 </noscript>
   
 
-<meta property="og:title" content="Cpp" />
+<meta property="og:title" content="Llvm" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://douyixuan.github.io/tags/cpp/" />
+<meta property="og:url" content="https://douyixuan.github.io/tags/llvm/" />
 <meta property="og:image" content="https://douyixuan.github.io/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://douyixuan.github.io/images/papermod-cover.png" />
-<meta name="twitter:title" content="Cpp"/>
+<meta name="twitter:title" content="Llvm"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -129,8 +129,8 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://douyixuan.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://douyixuan.github.io/tags/">Tags</a></div>
   <h1>
-    Cpp
-    <a href="/tags/cpp/index.xml" title="RSS" aria-label="RSS">
+    Llvm
+    <a href="/tags/llvm/index.xml" title="RSS" aria-label="RSS">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" height="23">
         <path d="M4 11a9 9 0 0 1 9 9" />
@@ -143,63 +143,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hi
+    <h2 class="entry-hint-parent">llvm and popular compilers
     </h2>
   </header>
   <div class="entry-content">
-    <p>hello world
-#include &lt;iostream&gt; int main() { std::cout &lt;&lt; &#34;hi&#34; &lt;&lt; std::endl; } </p>
+    <p>书上学过的程序典型编译流程：
+预处理 ( Preprocessing ) 编译 ( Compilation ) 汇编 ( Assemble ) 链接 ( Linking ) 这也是 Unix 操作系统上 GCC 编译器编译 C 代码的编译流程。
+LLVM LLVM 则是一个 modulized 的编译器基础设施，提供了编译器开发所需的各种工具和库。
+Clang clang&#43;&#43; 是 LLVM 项目中的 C&#43;&#43; 编译器前端。 它是基于 LLVM 架构的 C&#43;&#43; 编译器，提供了对 C&#43;&#43; 语言的支持，并且可以生成目标代码。 clang&#43;&#43; 是 LLVM 项目中的一个具体实现，它使用 LLVM 提供的库来进行 C&#43;&#43; 代码的编译和优化。
+以 Clang 举例，介绍一个 C 程序的编译流程。 使用如下命令可以输出 clang 的编译阶段。
+clang -v &amp;&amp; \ clang -ccc-print-phases -o test test.c 输出结果
+Homebrew clang version 16....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-03-18 15:54:35 +0800 CST'>March 18, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Cedric</footer>
-  <a class="entry-link" aria-label="post link to Hi" href="https://douyixuan.github.io/posts/cpp/byexample/hi/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Showoff
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is a showoff direction for the cool cpper.</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-18 15:39:54 +0800 CST'>March 18, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Cedric</footer>
-  <a class="entry-link" aria-label="post link to Showoff" href="https://douyixuan.github.io/posts/cpp/showoff/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">cpp: applications
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>cpp 目前被应用在以下一些领域中。
-游戏开发：cpp 是游戏开发中最常用的编程语言之一。它能够优化资源、提供多人联机功能，并且适用于开发3D游戏。著名的 UE 引擎。
-图形用户界面（GUI）应用程序：许多常用的 GUI 应用程序，如 Adobe 系统的 Illustrator 和 Photoshop，以及微软的 Win Amp 媒体播放器都是使用 cpp 开发的。
-数据库管理系统：流行的数据库管理工具，如 MySQL、Oracle、Postgres 和 MongoDB，都是使用 cpp 开发的。cpp 的文件处理、高速性、可靠性、函数、类和对象等特性使其非常适合数据管理。有一个数据库引擎排名的网站可以参考：https://db-engines.com/en/ranking。
-操作系统：大多数操作系统，如 Microsoft Windows、Apple Mac OS X 和移动操作系统 iOS，都是使用 cpp 开发的。作为操作系统同时期发展起来的 cpp，是操作系统的主力语言。
-浏览器：许多常用的网页浏览器，如 Google Chrome、Mozilla Firefox 和 Internet Explorer，都是使用 cpp 编写的。cpp 能够使浏览器以高速和最小延迟运行，确保网页内容快速加载。
-分布式存储和文件系统：cpp 是实现云存储系统的首选语言，因为它能够与硬件紧密配合，并提供多线程支持，以构建并发应用和负载容忍系统。很多分布式文件系统都是使用 cpp 开发的。
-编译器：许多高级编程语言的编译器都是使用 C 或 cpp 编写的。cpp 作为低级语言，能够直接操作硬件资源，因此非常适合编写编译器。比如说 LLVM，很多编程语言都受益于 LLVM。
-嵌入式系统：各种嵌入式系统，如智能手表和医疗设备系统，都使用 cpp 进行编程，因为它更接近硬件级别，并且可以提供许多低级功能调用。
-企业软件：cpp 用于开发许多企业软件，以及高级应用程序，如飞行模拟和雷达处理。
-库：许多高级数学计算库使用 cpp 作为核心编程语言。cpp 比大多数其他编程语言更快，并且支持并发，因此在需要速度和并发性的应用程序中，cpp 是最受欢迎的开发语言之一。</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-14 07:07:14 +0100 +0100'>January 14, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Cedric</footer>
-  <a class="entry-link" aria-label="post link to cpp: applications" href="https://douyixuan.github.io/posts/cpp/application/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">cpp: what can I do with it
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>cpp 是我最开始学习的编程语言，最开始只学到了点皮毛，其实就是 c &#43; class。懂得了面向对象的概念，但是对于多态、封装、继承都没怎么接触。学习数据结构和算法也是使用 cpp，这个时候开始接触 STL，对于 STL 的边界还是没有概念。至于 cpp 的泛型编程、RAII、异常处理、多线程，都是在煜哥的带领下接触到的。知道了 cppreference、 effective cpp，至于学了 cpp，除了能用它来做算法题，一点也没想过用 cpp 可以来做什么。
-cpp 目前可以用来干什么呢？ 作为一个系统级编程语言，加上历史悠久，目前 cpp 已经应用在许多领域，包括游戏开发、图形用户界面（GUI）应用程序、数据库管理系统、操作系统、浏览器、云计算和分布式系统、编译器、嵌入式系统、企业软件和库。
-cpp 应用列表</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-14 07:07:07 +0100 +0100'>January 14, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Cedric</footer>
-  <a class="entry-link" aria-label="post link to cpp: what can I do with it" href="https://douyixuan.github.io/posts/cpp/what-can-i-do-with-it/"></a>
+  <footer class="entry-footer"><span title='2024-04-15 07:09:24 +0100 +0100'>April 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Cedric</footer>
+  <a class="entry-link" aria-label="post link to llvm and popular compilers" href="https://douyixuan.github.io/posts/compiler/llvm-and-popular-compilers/"></a>
 </article>
     </main>
     
