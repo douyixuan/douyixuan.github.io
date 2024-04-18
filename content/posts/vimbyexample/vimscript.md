@@ -20,9 +20,14 @@ you can see the result.
 Or you can use:
 
 ```shell
-vim -eS hi.vim
+vim -e -c 'redir >> /dev/stdout' -S hi.vim -c 'q'
+````
+or
+```shell
+vim -e '+redir >> /dev/stdout' -S hi.vim '+q'
 ```
 
 ## Reference
 
 [Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/chapters/00.html)
+[VimL Learn](https://lymslive.github.io/vimllearn)
