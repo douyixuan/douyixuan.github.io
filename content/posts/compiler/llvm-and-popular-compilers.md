@@ -9,7 +9,7 @@ categories:
   -   llvm
 ---
 
-书上学过的程序典型编译流程：
+大多数人印象中的的程序典型编译流程：
 
 1. 预处理 ( Preprocessing )
 2. 编译 ( Compilation )
@@ -22,9 +22,70 @@ categories:
 
 LLVM 则是一个 modulized 的编译器基础设施，提供了编译器开发所需的各种工具和库。
 
+LLVM 有自己的语言，LLVM assembly language，有自己的一套[语法](https://llvm.org/docs/LangRef.html#syntax)和[结构](https://llvm.org/docs/LangRef.html#high-level-structure)，是一个静态单赋值的代码表示（code representation），同时提供了类型安全、接近于汇编（low level）的运算操作，还有很强的灵活性，几乎可以表示一切其他语言。
+
+设计成三种等价的不同形式来使用。
+
+### LLVM assembly language
+
+是文件文本存储格式。文件后缀是 `.ll`。
+[示例](https://godbolt.org/z/Whec98z15)
+
+### LLVM bitcode
+
+LLVM bitcode 是文件二进制存储格式，文件后缀是 `.bc`。
+
+### LLVM IR (Intermediate Representation)
+
+LLVM IR 是代码表示在内存中的表示。因为通常用作其他语言实现的中间表示，所以被称作 IR ，官方设计目标是成为 universal IR。
+
+下面统一称作 LLVM IR。
+
+LLVM 项目提供了完善的工具链，提供以下编译能力：
+
+- AOT(Ahead of Time) 静态编译器，提前把 LLVM IR 编译到可执行文件，直接运行
+- JIT(Just in Time)  动态解释器，运行时先编译，再执行
+- Interpreter        动态解释器，运行时直接解释执行 LLVM IR
+
+![AOT-JIT-Interpreter](image.png)
+
+### [主要包括以下工具](https://llvm.org/docs/GettingStarted.html#llvm-tools)
+
+```text
+llvm-ar
+
+The archiver produces an archive containing the given LLVM bitcode files, optionally with an index for faster lookup.
+
+llvm-as
+
+The assembler transforms the human readable LLVM assembly to LLVM bitcode.
+
+llvm-dis
+
+The disassembler transforms the LLVM bitcode to human readable LLVM assembly.
+
+llvm-link
+
+llvm-link, not surprisingly, links multiple LLVM modules into a single program.
+
+lli
+
+lli is the LLVM interpreter, which can directly execute LLVM bitcode (although very slowly…). For architectures that support it (currently x86, Sparc, and PowerPC), by default, lli will function as a Just-In-Time compiler (if the functionality was compiled in), and will execute the code much faster than the interpreter.
+可以使用 --force-interpreter 选项来使用解释器执行。
+
+llc
+
+llc is the LLVM backend compiler, which translates LLVM bitcode to a native code assembly file.
+
+opt
+
+opt reads LLVM bitcode, applies a series of LLVM to LLVM transformations (which are specified on the command line), and outputs the resultant bitcode.
+opt can also run a specific analysis on an input LLVM bitcode file and print the results. Primarily useful for debugging analyses, or familiarizing yourself with what an analysis does.
+```
+
 ### Clang
 
-clang++ 是 LLVM 项目中的 C++ 编译器前端。
+clang++ 是一个 LLVM native 的 C/C++ 编译器前端。
 它是基于 LLVM 架构的 C++ 编译器，提供了对 C++ 语言的支持，并且可以生成目标代码。
 clang++ 是 LLVM 项目中的一个具体实现，它使用 LLVM 提供的库来进行 C++ 代码的编译和优化。
 
@@ -189,3 +250,9 @@ Kotlin 是一种由 JetBrains 开发的现代编程语言，Kotlin/Native 是使
 [NVVM IR](https://docs.nvidia.com/cuda/nvvm-ir-spec/index.html)
 
 NVVM IR 是 LLVM IR 的一个子集，增加了一些规则、限制和约定以及一些内置函数。
+
+## Reference
+
+[JIT AOT](https://it-blog-cn.com/blogs/jvm/jit_aot.html)
+[AOT JIT](https://blog.csdn.net/cristianoxm/article/details/126032096)
+[LLVM Docs](https://llvm.org/docs/LangRef.html)
