@@ -75,11 +75,11 @@ echo  {'a': 1, 'b': 2}.a       | " Syntactic sugar for simple keys
 echo  function('type')                   | " Reference to function type()
 " Note that `funcref('type')` will throw an error because the argument must be
 " a user-defined function; see further below for defining your own functions.
-" TODO:
-" function! s:type()
-"     echo "type"
-" endfunction
-" echo  funcref('type')                    | " Reference by identity, not name
+" Must use g: for ref
+function! ForRef()
+    echo "type"
+endfunction
+echo  funcref('ForRef')                    | " Reference by identity, not name
 " A lambda (|lambda|) is an anonymous function; it can only contain one
 " expression in its body, which is also its implicit return value.
 echo  {x -> x * x}                       | " Anonymous function
