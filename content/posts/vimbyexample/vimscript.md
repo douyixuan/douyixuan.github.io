@@ -27,8 +27,13 @@ or
 vim -e '+redir >> /dev/stdout' -S hi.vim '+q'
 ```
 
+## Examples
+
+[Hi](../hi.vim)
+
 ## Reference
 
 [Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/chapters/00.html)
 [VimL Learn](https://lymslive.github.io/vimllearn)
 [Learn X in Y minutes](https://learnxinyminutes.com/docs/vimscript/)
+[Vim scripting cheatsheet](https://devhints.io/vimscript)

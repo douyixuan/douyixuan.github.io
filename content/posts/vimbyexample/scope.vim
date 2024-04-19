@@ -16,5 +16,8 @@ echo  t:                | " All tab page variables
 echo  g:                | " All global variables
 echo  s:                | " All script variables
 echo  v:                | " All Vim variables
-" echo  l:                | " All local variables
-" echo  a:                | " All function arguments
+function Foo(a, b)
+    echo  l:                | " All local variables
+    echo  a:                | " All function arguments
+endfunction
+call Foo('A', 'B')
