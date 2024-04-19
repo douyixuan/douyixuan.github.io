@@ -9,6 +9,8 @@ categories:
   -   llvm
 ---
 
+# LLVM And Popular Compilers
+
 大多数人印象中的的程序典型编译流程：
 
 1. 预处理 ( Preprocessing )
@@ -81,6 +83,30 @@ opt
 
 opt reads LLVM bitcode, applies a series of LLVM to LLVM transformations (which are specified on the command line), and outputs the resultant bitcode.
 opt can also run a specific analysis on an input LLVM bitcode file and print the results. Primarily useful for debugging analyses, or familiarizing yourself with what an analysis does.
+```
+
+### LLVM IR 层次结构和 Hello World
+
+![IR-structure](image-1.png)
+
+[语言参考](https://llvm.org/docs/LangRef.html)
+
+[Hello World](https://godbolt.org/z/Wazb5zrf3)
+
+```rust
+@.str = private unnamed_addr constant [13 x i8] c"Hello World!\00", align 1, !dbg !0
+
+define dso_local i32 @main() #0 !dbg !18 {
+  %1 = alloca i32, align 4
+  store i32 0, ptr %1, align 4
+  %2 = call i32 (ptr, ...) @printf(ptr noundef @.str), !dbg !22
+  ret i32 0, !dbg !23
+}
+
+declare i32 @printf(ptr noundef, ...) #1
+
+attributes #0 = { noinline nounwind optnone "target-cpu"="x86-64" "no-trapping-math"="true"}
+attributes #1 = { "target-cpu"="x86-64" "no-trapping-math"="true" }
 ```
 
 ### Clang
