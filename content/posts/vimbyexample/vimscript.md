@@ -8,21 +8,20 @@ categories:
   - vim
 ---
 
-Try these scripts in vim editor.
-
-In normal mode and type
+You can run these scripts in vim editor in [normal mode](https://www.freecodecamp.org/news/vim-editor-modes-explained/#normal-mode).
 
 ```vim
 :source hi.vim
 ```
 
-you can see the result.
 Or you can use:
 
 ```shell
 vim -e -c 'redir >> /dev/stdout' -S hi.vim -c 'q'
-````
+```
+
 or
+
 ```shell
 vim -e '+redir >> /dev/stdout' -S hi.vim '+q'
 ```
