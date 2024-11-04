@@ -49,7 +49,7 @@ LLVM 项目提供了完善的工具链，提供以下编译能力：
 - JIT(Just in Time)  动态解释器，运行时先编译，再执行
 - Interpreter        动态解释器，运行时直接解释执行 LLVM IR
 
-![AOT-JIT-Interpreter](llvm-and-popular-compilers/image.png)
+![AOT-JIT-Interpreter](image.png)
 
 ### [主要包括以下工具](https://llvm.org/docs/GettingStarted.html#llvm-tools)
 
@@ -87,7 +87,7 @@ opt can also run a specific analysis on an input LLVM bitcode file and print the
 
 ### LLVM IR 层次结构和 Hello World
 
-![IR-structure](llvm-and-popular-compilers/image-1.png)
+![IR-structure](image-1.png)
 
 [语言参考](https://llvm.org/docs/LangRef.html)
 
