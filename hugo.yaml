@@ -1,7 +1,7 @@
 baseURL: https://douyixuan.github.io/
 title: Cedric's
 languageCode: en-us
-paginate: 5
+pagination.pagerSize: 5
 theme: ["github.com/adityatelange/hugo-PaperMod"]
 module:
   imports:
