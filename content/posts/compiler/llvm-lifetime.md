@@ -6,6 +6,7 @@ draft:     false
 summary:   read more
 categories:
 tags:
+- llvm
 ---
 
 In LLVM, variable lifetime management is closely tied to the concepts of scope, allocation, and memory management within the Intermediate Representation (IR). Here’s how LLVM handles variable lifetime:
