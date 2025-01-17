@@ -15,7 +15,7 @@ You need to install a terminal first on Mac. iTerm2 and kitty are both ok.
 Now I get a editor just like VSCode.
 - Main editor: file explorer, open editors
 - A terminal
-- Bonus: <leader> key, deault is `space`
+- Bonus: `<leader>` key, deault is `space`
 
 [Check the gist for update.](https://gist.github.com/douyixuan/f7291032e08b26e2007f5e7cb17f8c10)
 
