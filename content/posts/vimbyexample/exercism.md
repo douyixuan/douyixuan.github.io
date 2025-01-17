@@ -2,7 +2,7 @@
 title:     'Learn Vimscript on Exercism'
 date:      2024-04-26T17:43:14+08:00
 author:    Cedric
-draft:     true
+draft:     false
 summary:   read more
 categories: vimbyexample
 tags:
