@@ -74,5 +74,5 @@ September 2013 - June 2017
 * **Development Tools** : Linux, Docker
 * **Database Management** : MySQL, NoSQL (Redis, MongoDB)
 * **Compiler Design** : Familiar with compiler optimization techniques and LLVM infrastructure
-* **Langugae Skills** : Strong verbal and written communication skills in English, with an IELTS score of 6.5 and basic conversational skills in Spanish (A2 level of CEFR, Duolinguo score 40, with an 854-day streak).
+* **Langugae Skills** : English
 * **Soft Skills** : Strong problem-solving, communication, and teamwork abilities
