@@ -50,4 +50,4 @@ pub fn main() void {
 [execute here](https://godbolt.org/z/7v3G68b55)
 
 ### 总结
-Zig 利用 `comptime` 特性来提高代码的性能和可读性.
+Zig 利用 `comptime` 特性来提高代码的性能和可读性。
