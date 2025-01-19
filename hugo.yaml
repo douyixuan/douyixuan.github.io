@@ -11,11 +11,10 @@ menu:
   main:
     - name: Search
       url: search/
-      weight: 10
-    - identifier: tags
-      name: tags
+      weight: 5
+    - name: Tags
       url: /tags/
-      weight: 20
+      weight: 10
 
 outputs:
   home:
@@ -31,7 +30,7 @@ params:
   defaultTheme: auto
   # disableThemeToggle: true
 
-  # ShowShareButtons: true
+  ShowShareButtons: true
   # disableSpecial1stPost: true
   ShowReadingTime: true
   displayFullLangName: true
@@ -53,8 +52,6 @@ params:
     # imageWidth: 120
     # imageHeight: 120
     buttons:
-      - name: Archives
-        url: archives
       - name: Tags
         url: tags
 
