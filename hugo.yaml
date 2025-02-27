@@ -5,7 +5,7 @@ pagination.pagerSize: 5
 theme: ["github.com/adityatelange/hugo-PaperMod"]
 module:
   imports:
-  - path: github.com/adityatelange/hugo-PaperMod
+    - path: github.com/adityatelange/hugo-PaperMod
 
 menu:
   main:
@@ -15,6 +15,9 @@ menu:
     - name: Tags
       url: /tags/
       weight: 10
+    - name: Me
+      url: posts/about/
+      weight: 15
 
 outputs:
   home:
