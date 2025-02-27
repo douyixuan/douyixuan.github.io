@@ -2,7 +2,7 @@
 title:     'Valgrind'
 date:      2025-02-27T11:42:59+08:00
 author:    Cedric
-draft:     true
+draft:     false
 summary:   read more
 categories:
 tags:

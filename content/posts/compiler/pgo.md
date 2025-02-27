@@ -2,7 +2,7 @@
 title:     'Pgo'
 date:      2025-02-27T15:46:03+08:00
 author:    Cedric
-draft:     true
+draft:     false
 summary:   read more
 categories:
 tags:
