@@ -2,7 +2,7 @@
 title:     'Shell'
 date:      2025-03-23T23:09:47+08:00
 author:    Cedric
-draft:     true
+draft:     false
 summary:   read more
 categories:
 tags:
