@@ -6,6 +6,7 @@ theme: ["github.com/adityatelange/hugo-PaperMod"]
 module:
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
+    - path: github.com/hugomods/mermaid
 
 menu:
   main:
@@ -46,6 +47,11 @@ params:
   ShowToc: true
   # comments: false
   images: ["images/papermod-cover.png"]
+
+  mermaidZoom: true
+  mermaid:
+    force: true
+    js_url: https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs
 
   profileMode:
     enabled: false
