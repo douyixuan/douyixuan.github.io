@@ -57,7 +57,7 @@ jobs:
           hugo mod get -u && \
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/douyixuan.github.io/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
