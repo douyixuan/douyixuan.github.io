@@ -1,4 +1,4 @@
-baseURL: https://douyixuan.github.io/
+baseURL: https://douyixuan.github.io/douyixuan.github.io/
 title: Cedric's
 languageCode: en-us
 pagination.pagerSize: 5
@@ -7,6 +7,8 @@ module:
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
     - path: github.com/hugomods/mermaid
+relativeURLs: true
+canonifyURLs: true
 
 menu:
   main:
