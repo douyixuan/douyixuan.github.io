@@ -2,7 +2,7 @@
 title:     'Mlir Affine'
 date:      2025-07-10T10:47:28+08:00
 author:    Cedric
-draft:     true
+draft:     false
 summary:   read more
 categories:
 tags:

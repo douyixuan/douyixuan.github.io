@@ -2,7 +2,7 @@
 title:     'Triton Matmul Digest'
 date:      2025-07-24T20:26:28+08:00
 author:    Cedric
-draft:     true
+draft:     false
 summary:   read more
 categories:
 tags:

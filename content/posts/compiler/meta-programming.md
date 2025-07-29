@@ -2,7 +2,7 @@
 title:     'Meta Programming'
 date:      2025-05-07T11:31:30+08:00
 author:    Cedric
-draft:     true
+draft:     false
 summary:   read more
 categories:
 tags:
