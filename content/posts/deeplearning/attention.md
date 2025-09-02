@@ -2,7 +2,7 @@
 title:     'Attention'
 date:      2025-07-10T15:24:31+08:00
 author:    Cedric
-draft:     true
+draft:     false
 summary:   read more
 categories:
 tags:
@@ -14,7 +14,7 @@ tags:
 
 $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 
-我们来拆解一下这个公式的每个部分：
+拆解一下这个公式的每个部分：
 
 1.  **$Q$ (Query 查询)**：
     * $Q$ 是一个矩阵，它的每一行代表一个**查询向量**。你可以把它想象成“我想知道什么”或者“我现在关注的焦点”。
@@ -155,7 +155,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 > 需要计算过的 Key 和 Value 向量是因为预测生成的词也要放到注意力机制中去考虑。
 -----
 
-你提得非常对！之前的模拟确实更侧重于模型内部的生成机制，而没有明确地把**用户的初始问题或提示输入**也整合进去。
+之前的模拟确实更侧重于模型内部的生成机制，而没有明确地把**用户的初始问题或提示输入**也整合进去。
 
 在实际的大模型推理中，用户输入的提示词（prompt）是整个生成过程的**起点**。模型首先会处理这个提示词，理解用户的意图，然后才开始生成回应。
 
