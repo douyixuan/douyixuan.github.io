@@ -2,11 +2,11 @@
 title:     'Resume'
 date:      2024-11-03
 draft:     false
-categories: 
-- about
-tags: 
-- about
-- resume
+categories:
+  - about
+tags:
+  - about
+  - resume
 ---
 ### Professional Summary
 

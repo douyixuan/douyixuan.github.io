@@ -3,12 +3,13 @@ title:     'Comptime'
 date:      2025-01-19T15:36:51+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - compiler
 tags:
-- zig
+  - compiler
+  - comptime
 ---
-
 [Zig's Comptime is Bonkers Good](https://www.scottredig.com/blog/bonkers_comptime/?ref=dailydev)
 
 > 探讨了 Zig 编程语言的强大编译期特性 `comptime`,它允许开发者在编译期执行复杂的数据操作和代码生成,从而提高程序的性能和可读性。

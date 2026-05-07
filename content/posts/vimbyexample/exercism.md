@@ -3,14 +3,12 @@ title:     'Learn Vimscript on Exercism'
 date:      2024-04-26T17:43:14+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories: vimbyexample
 tags:
-- vim
-- vimscript
-- exercism
+  - vimbyexample
+  - exercism
 ---
-
 ## install exercism
 
 ```bash

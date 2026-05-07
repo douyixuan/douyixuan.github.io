@@ -3,10 +3,12 @@ title:     'Call of Duty'
 date:      2024-04-25T09:55:49+08:00
 author:    Cedric
 draft:     true
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - compiler
 tags:
-- compiler
+  - compiler
+  - call-of-duty
 ---
 ## What to do with the legacy code？
 

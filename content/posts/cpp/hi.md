@@ -2,12 +2,12 @@
 title: 'Hi'
 date: 2024-03-18T15:54:35+08:00
 draft: false
-tags: 
+tags:
   - cpp
+  - hi
 categories:
   - cpp
 ---
-
 hello world
 
 ```cpp

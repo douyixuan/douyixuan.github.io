@@ -3,9 +3,12 @@ title:     'Mlir Lowering'
 date:      2025-07-25T17:19:12+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - compiler
 tags:
+  - compiler
+  - mlir-lowering
 ---
 
 ```mermaid

@@ -5,15 +5,11 @@ author:    Cedric
 draft:     false
 summary:   剖析从高层框架到硬件的GPU计算技术栈，理解其组件与协作机制。
 categories:
+  - compiler
 tags:
-- GPU
-- 深度学习
-- 编译器
-- CUDA
-- MLIR
-- LLVM
+  - compiler
+  - gpu
 ---
-
 ## 引言
 
 整理一下当前主流的 GPU 技术栈进行概览，并重点探讨其关键组件及其连接方式。

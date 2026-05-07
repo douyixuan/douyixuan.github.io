@@ -2,12 +2,13 @@
 title: 'Vimscript'
 date: 2024-04-15T16:33:59+08:00
 draft: false
-tags: 
+tags:
+  - vimbyexample
   - vimscript
 categories:
+  - vimbyexample
   - vim
 ---
-
 You can run these scripts in vim editor in [normal mode](https://www.freecodecamp.org/news/vim-editor-modes-explained/#normal-mode).
 
 ```vim

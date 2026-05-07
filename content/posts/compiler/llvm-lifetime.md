@@ -3,12 +3,13 @@ title:     'LLVM Lifetime'
 date:      2024-07-17T17:48:26+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - compiler
 tags:
-- LLVM
+  - compiler
+  - llvm-lifetime
 ---
-
 In LLVM, variable lifetime management is closely tied to the concepts of scope, allocation, and memory management within the Intermediate Representation (IR). Here’s how LLVM handles variable lifetime:
 
 ### 1. **Stack Allocation with `alloca`**

@@ -3,10 +3,12 @@ title:     'Lane'
 date:      2025-11-25T17:55:38+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - tvm
 tags:
----
+  - tvm
+  - lane
 
 在 TVM (Tensor Virtual Machine) 中，**lane** 是向量化表达的核心概念。本文从流水线工厂的比喻开始，逐步深入到硬件 SIMD 寄存器，最后延伸到 TVM 中的 lanes 概念。
 
@@ -30,9 +32,6 @@ tags:
 ```
 
 **关键理解：**
-- **工厂车间** = 计算资源（固定大小）
-- **流水线** = 并行处理单元（可以有多条）
-- **效率最高** = 所有流水线都启用，同时工作
 
 ### 完整工作流程
 
@@ -99,9 +98,6 @@ tags:
 
 在 CPU 硬件中，**SIMD 寄存器**就是我们的"工厂车间"：
 
-- **工厂车间** = SIMD 寄存器（固定位宽，如 128-bit, 256-bit, 512-bit）
-- **流水线** = Lane（每个处理一个数据元素）
-- **产品大小** = 数据类型大小（如 float32=32bit, float64=64bit）
 
 ### 核心公式：Bit → Lanes 的转换
 
@@ -135,9 +131,7 @@ Lanes = 128 bits / 32 bits = 4 条流水线
 ```
 
 **效率：4/4 = 100%** ✅（所有流水线都启用）
-
 ---
-
 **场景 2：处理 float64（64 bits，double）**
 
 ```

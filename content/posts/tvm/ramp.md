@@ -1,14 +1,18 @@
-***
+---
 
 title:     'Ramp'
 date:      2025-11-18T15:48:20+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary:   TVM TIR 中 ramp 向量表达与向量化地址生成笔记
 categories:
+  - tvm
 tags:
------
-
+  - tvm
+  - ramp
+  - tir
+  - vectorization
+---
 在 TVM (Tensor Virtual Machine) 中，ramp 是向量化表达 (vectorized expression) 的核心构造之一，它用于表示连续等差元素的向量，常见于循环展开、SIMD 指令生成、memory load/store 的地址计算等场景。
 
 ## 1. ramp 的定义与向量关系

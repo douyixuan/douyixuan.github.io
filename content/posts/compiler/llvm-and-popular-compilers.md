@@ -3,12 +3,14 @@ title: 'llvm and popular compilers'
 date: 2024-04-15T07:09:24+01:00
 draft: false
 tags:
+  - compiler
+  - llvm-and-popular-compilers
   -   llvm
   -   compiler
 categories:
+  - compiler
   -   llvm
 ---
-
 # LLVM And Popular Compilers
 
 大多数人印象中的的程序典型编译流程：
