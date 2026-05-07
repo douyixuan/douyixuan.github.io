@@ -2,12 +2,12 @@
 title: 'cpp: applications'
 date: 2024-01-14T07:07:14+01:00
 draft: false
-tags: 
+tags:
   - cpp
+  - application
 categories:
   - cpp
 ---
-
 cpp 目前被应用在以下一些领域中。
 
 游戏开发：cpp 是游戏开发中最常用的编程语言之一。它能够优化资源、提供多人联机功能，并且适用于开发3D游戏。著名的 UE 引擎。

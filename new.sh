@@ -22,12 +22,12 @@ if [ $# -eq 0 ] || [ "$1" = "-h" ] || [ "$1" = "--help" ] || [ "$1" = "help" ]; 
     exit 0
 fi
 
-catogory=$1
-filename=$1
+category=$1
+filename=$category
 if [ -z "$2" ]; then
     echo "new post: $filename"
 else
     filename=$2
 fi
 set -x
-hugo new content posts/$catogory/$filename.md
+hugo new content posts/$category/$filename.md

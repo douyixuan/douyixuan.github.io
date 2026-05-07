@@ -3,9 +3,10 @@ title:     'Hi, 37Signals'
 date:      2024-11-03
 draft:     true
 categories:
-- about
+  - interview
 tags:
-- about
+  - interview
+  - 37signals
 ---
 ## Hi, I’m Cedric
 

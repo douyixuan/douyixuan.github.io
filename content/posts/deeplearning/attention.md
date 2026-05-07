@@ -3,10 +3,12 @@ title:     'Attention'
 date:      2025-07-10T15:24:31+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - deeplearning
 tags:
----
+  - deeplearning
+  - attention
 
 ### 注意力机制的通用公式
 
@@ -53,9 +55,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 1.  **计算相似度** ($QK^T$)：衡量查询和每个键之间的相关性。
 2.  **归一化权重** ($\text{softmax}(\cdot)$)：将相似度转换为概率分布的注意力权重。
 3.  **加权求和** ($(\cdot)V$)：根据权重，对值进行加权组合，得到最终的注意力输出。
-
 ---
-
 ### 什么是注意力机制？
 
 想象一下你正在阅读一本书。当你读到某个词的时候，你的大脑并不会平等地关注书里的每一个字。相反，你会根据上下文，把更多的注意力放在与当前词相关的其他词语上，以此来理解它的意思。

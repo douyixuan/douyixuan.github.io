@@ -3,10 +3,12 @@ title:     'Softmax'
 date:      2025-08-26T14:01:30+08:00
 author:    Cedric
 draft:     true
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - deeplearning
 tags:
----
+  - deeplearning
+  - softmax
 
 # 📑 在线 Softmax 整理
 
@@ -44,9 +46,7 @@ $$
 ### 在线 softmax
 
 在线 softmax 的目标：**单遍扫描数据**，动态维护最大值和和式，避免两次显存读取。
-
 ---
-
 ## 2. 核心维护量
 
 * 当前最大值：$m$

@@ -1,5 +1,5 @@
-baseURL: https://douyixuan.github.io/douyixuan.github.io/
-title: Cedric's
+baseURL: https://douyixuan.github.io/
+title: 兜忆轩 | Cedric's Compiler Notes
 languageCode: en-us
 pagination.pagerSize: 5
 theme: ["github.com/adityatelange/hugo-PaperMod"]
@@ -30,7 +30,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: ""
+  description: "Cedric's lab notes on compiler, GPU kernels, MLIR, Triton, and TVM."
   author: Cedric
 
   defaultTheme: auto
@@ -69,13 +69,11 @@ params:
   homeInfoParams:
     Title: "兜忆轩"
     Content: >
-      👋 Welcome to my personal place!
+      我是 Cedric，做 compiler / GPU / backend systems。
 
-      - ⛳️ I am a backend programmer with some experience in software optimization and [compiler](https://news.ycombinator.com/item?id=40752076).
+      这里记录我拆 AI 编译器、Triton/TVM/MLIR、CUDA kernel 和工程工具的过程。
 
-        - 👍 I love open source culture and I'm getting involved. Recently working on [CellScript](https://github.com/cell-labs/cell-script).
-
-      - 💭 I hope everyone can have a decent life without [working like a slave](https://www.digitalhistory.uh.edu/disp_textbook.cfm?smtid=2&psid=3041#:~:text=On%20a%20typical%20plantation%2C%20slaves,or%2016%20hours%20a%20day.).
+      文章分为 lab notes、concept notes 和 essays；lab notes 优先给出可复现代码。
 
   fuseOpts:
     isCaseSensitive: false

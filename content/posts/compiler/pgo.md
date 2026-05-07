@@ -3,17 +3,17 @@ title:     'Pgo'
 date:      2025-02-27T15:46:03+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - compiler
 tags:
----
+  - compiler
+  - pgo
 
 ### Clang 实现 PGO 的原理分析：再来一个通俗版
 
 Profile-Guided Optimization（PGO）是编译器的一种“聪明玩法”，它通过观察程序真实运行时的行为，帮助 Clang 生成更快、更高效的代码。就像厨师做菜前先问你口味偏好，然后根据你的喜好调整配方，而不是瞎猜着做。Clang 的 PGO 实现简单又强大，下面我们再用一个新角度讲讲它的原理，加个例子，再推荐点实用的输入和 GitHub 开源项目。
-
 ---
-
 #### 1. PGO 的核心：先摸底，再优化
 
 想象你是个快递员，每天送包裹但不知道哪条路最堵。PGO 就像是你先带着 GPS 跑几天，记下哪条路快、哪条路慢，然后根据这些记录规划最佳路线。Clang 的 PGO 也是这个逻辑，分三步走：

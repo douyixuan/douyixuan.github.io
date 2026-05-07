@@ -1,10 +1,11 @@
 ---
-title:     '{{ replace .File.ContentBaseName "-" " " | title }}'
-date:      {{ .Date }}
-author:    Cedric
-draft:     true
-summary:   read more
-categories:
-tags:
+title: "{{ replace .File.ContentBaseName "-" " " | title }}"
+date: {{ .Date }}
+author: Cedric
+draft: true
+summary: ""
+categories: ["compiler"]
+tags: []
+series: []
+status: "note" # note | lab | essay | reference
 ---
-

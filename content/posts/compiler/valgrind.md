@@ -3,32 +3,24 @@ title:     'Valgrind'
 date:      2025-02-27T11:42:59+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - compiler
 tags:
----
+  - compiler
+  - valgrind
 
 ### 关键要点
 
-- 研究表明，Valgrind 是分析内存泄漏的强大工具，适合初学者和快速诊断。
-- 使用 Valgrind 的步骤包括安装、编译程序、运行程序并分析报告。
-- 提供一个 C 代码示例，展示如何使用 Valgrind 检测内存泄漏。
 
 ### Valgrind 内存泄漏分析步骤
 Valgrind 是一种专门用于检测内存问题的工具，可以自动报告内存泄漏。以下是详细步骤：
 
 #### 安装和准备
-- 确保系统中已安装 Valgrind。例如，在 Ubuntu 上运行 `sudo apt-get install valgrind`。
-- 编译 C 程序时，无需特殊标志，例如 `gcc myprogram.c -o myprogram`。
 
 #### 运行程序
-- 使用命令 `valgrind --leak-check=yes ./myprogram` 运行程序。Valgrind 会监控内存分配和释放。
-- 程序运行结束后，Valgrind 会生成报告，显示内存泄漏的详细信息，包括泄漏的内存量和分配位置的堆栈跟踪。
 
 #### 分析和修复
-- 检查报告中的 “LEAK SUMMARY” 部分，了解内存泄漏的总量和块数。
-- 根据堆栈跟踪定位代码中的问题，例如报告可能显示 “definitely lost: 8 bytes in 2 blocks”，并指出分配位置。
-- 修改代码，确保所有分配的内存都被正确释放，例如添加 `free` 调用。
 
 ### C 代码示例
 以下是一个包含内存泄漏的 C 代码示例：
@@ -58,9 +50,7 @@ int main() {
 ```
 
 运行此程序时，Valgrind 会报告两个内存泄漏：一个在 `leak_memory` 函数中，另一个在 `main` 函数的 `ptr2`。
-
 ---
-
 ### 调查报告：Valgrind 内存泄漏分析的详细说明
 
 #### 引言

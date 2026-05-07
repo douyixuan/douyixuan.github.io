@@ -3,15 +3,15 @@ title:     'Mlir Affine'
 date:      2025-07-10T10:47:28+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - compiler
 tags:
----
+  - compiler
+  - mlir-affine
 
 Affine方言（Affine Dialect）是MLIR（Multi-Level Intermediate Representation）中专门为**高效表达和优化计算密集型循环嵌套**而设计的一种中间表示（IR）。它基于多面体模型（Polyhedral Model），通过仿射约束（Affine Constraints）精确描述循环迭代空间和数据访问模式，为编译器提供强大的分析和变换能力。
-
 ---
-
 “affine”（仿射）**最核心的思想：线性 + 平移**
 
 可以把“仿射”理解为一种**“线性变换”加上一个“平移”**的操作。它保持了“线性”结构的大部分良好性质（比如直线变换后还是直线，平行线变换后还是平行线），但不再要求必须通过原点。

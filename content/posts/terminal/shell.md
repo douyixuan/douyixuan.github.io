@@ -3,9 +3,12 @@ title:     'Shell'
 date:      2025-03-23T23:09:47+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - terminal
 tags:
+  - terminal
+  - shell
 ---
 
 # Comparing Bash, Zsh, and Fish Shell

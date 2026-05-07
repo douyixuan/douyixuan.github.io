@@ -3,9 +3,12 @@ title:     'Lazyvim'
 date:      2024-12-11T18:12:02+08:00
 author:    Cedric
 draft:     true
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - lazyvim
 tags:
+  - lazyvim
+  - lazyvim
 ---
 
 I begin to use nvim and lazyvim.

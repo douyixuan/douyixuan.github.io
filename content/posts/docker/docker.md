@@ -3,12 +3,12 @@ title:     'Docker Desktop Alternative'
 date:      2024-12-21T23:11:08+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - docker
 tags:
-- docker
+  - docker
 ---
-
 [Docker on MacOS is still slow?](https://www.paolomainardi.com/posts/docker-performance-macos-2025/?ref=dailydev)
 
 We have new solutions in the docker ecosystem. `Lima` (open-source) performs well and sometimes better than Docker Desktop, while Docker’s new file synchronization feature offers impressive speed improvements (59% faster) but requires a paid subscription. Additionally, `OrbStack` has emerged as a strong contender, offering excellent performance with bind mounts and native operations. For the most stable performance, the hybrid approach (combining bind mounts with volumes) remains the best practice. Choose your setup based on your needs:

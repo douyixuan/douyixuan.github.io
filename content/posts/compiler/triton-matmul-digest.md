@@ -3,9 +3,12 @@ title:     'Triton Matmul Digest'
 date:      2025-07-24T20:26:28+08:00
 author:    Cedric
 draft:     false
-summary:   read more
+summary: "待补充：本文摘要"
 categories:
+  - compiler
 tags:
+  - compiler
+  - triton-matmul-digest
 ---
 
 # Triton矩阵乘法Kernel深度解析
