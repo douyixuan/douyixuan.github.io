@@ -34,7 +34,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo mod get
+          hugo mod tidy
           hugo \
             --minify \
             --baseURL "https://douyixuan.github.io/"
