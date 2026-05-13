@@ -9,6 +9,7 @@ categories:
 tags:
   - deeplearning
   - softmax
+---
 
 # 📑 在线 Softmax 整理
 
