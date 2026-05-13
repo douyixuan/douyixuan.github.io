@@ -10,6 +10,7 @@ tags:
   - compiler
   - gpu-simt-arch
 
+---
 尽可能具体地解释 SIMT 架构在 NVIDIA GPU（使用 CUDA 术语）中的分层和硬件资源管理。
 
 想象一个金字塔结构，从最底层的物理执行单元开始向上构建：
