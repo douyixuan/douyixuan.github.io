@@ -9,6 +9,7 @@ categories:
 tags:
   - tvm
   - lane
+---
 
 在 TVM (Tensor Virtual Machine) 中，**lane** 是向量化表达的核心概念。本文从流水线工厂的比喻开始，逐步深入到硬件 SIMD 寄存器，最后延伸到 TVM 中的 lanes 概念。
 
