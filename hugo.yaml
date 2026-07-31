@@ -12,6 +12,9 @@ canonifyURLs: true
 
 menu:
   main:
+    - name: AI Native Digest
+      url: posts/ai-native/
+      weight: 1
     - name: Search
       url: search/
       weight: 5
