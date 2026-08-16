@@ -15,6 +15,9 @@ menu:
     - name: AI Native Digest
       url: posts/ai-native/
       weight: 1
+    - name: Daily IELTS Reading
+      url: posts/ielts-reading/
+      weight: 2
     - name: Search
       url: search/
       weight: 5
