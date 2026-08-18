@@ -1,0 +1,1 @@
+Temporary CI probe for Hugo build verification on 2026-08-18.
