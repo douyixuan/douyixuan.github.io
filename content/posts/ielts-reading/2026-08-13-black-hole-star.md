@@ -38,40 +38,30 @@ Astronomers using the James Webb Space Telescope identified an object that looks
 
 **1. Why is the object described as a “black hole star”?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 It appears red and star-like, but its energy output is too large to come from ordinary nuclear fusion. Researchers interpret it as a black hole embedded in a dense gas envelope whose radiation makes the system resemble a giant star.
-
-</details>
+{{< /answer >}}
 
 **2. Why can ordinary stellar fusion not explain its brightness?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 The observed luminosity is enormously beyond what a normal star could generate through fusion. A much more energetic central engine, such as accretion onto a black hole, is therefore required.
-
-</details>
+{{< /answer >}}
 
 **3. What role did the object's spectrum play in the interpretation?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Distinctive spectral features, including strong breaks and absorption associated with dense gas, did not fit a simple ordinary-star explanation. Models with a gas-enshrouded black hole reproduced the unusual light more naturally.
-
-</details>
+{{< /answer >}}
 
 **4. How did simulations and models help the researchers?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 They allowed the team to compare different physical explanations with the observed spectrum and luminosity. The black-hole-plus-dense-gas model provided a plausible match to the data.
-
-</details>
+{{< /answer >}}
 
 **5. Why could this object help explain the “little red dots” seen by JWST?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Many little red dots have similarly puzzling red, compact, and extremely luminous properties. If black hole stars naturally produce those signatures, they could provide a common physical explanation for a broader population of early-universe objects.
-
-</details>
+{{< /answer >}}
