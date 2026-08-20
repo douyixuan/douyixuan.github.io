@@ -38,40 +38,30 @@ Long-duration missions to the Moon and Mars require habitats that support not on
 
 **1. Why is physical survival alone not enough when designing long-duration space habitats?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Crew members may live in isolated and confined environments for long periods. Their mental health, sleep, social relationships, stress, and ability to perform work can affect mission safety, so the habitat must support behavioral health as well as basic physical needs.
-
-</details>
+{{< /answer >}}
 
 **2. How can habitat design influence crew behavior and performance?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Features such as spatial layout, privacy, lighting, noise, and opportunities for interaction can affect sleep, stress, social cohesion, and performance. A design decision can therefore create multiple downstream behavioral effects.
-
-</details>
+{{< /answer >}}
 
 **3. Why did the researchers use a Directed Acyclic Graph?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 A DAG provides a structured way to represent proposed causal links between design factors and behavioral outcomes. It helps designers see chains of influence instead of treating each design variable independently.
-
-</details>
+{{< /answer >}}
 
 **4. How could an interactive causal map help a habitat designer?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 A designer can explore how changing a habitat feature may affect several human outcomes, identify possible tradeoffs, and choose interventions based on the behavioral risks most relevant to a particular mission.
-
-</details>
+{{< /answer >}}
 
 **5. Why is a one-size-fits-all habitat unlikely to be optimal?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Different missions have different durations, crew compositions, environmental constraints, risks, and operational needs. The importance of each design factor therefore changes with the mission context.
-
-</details>
+{{< /answer >}}
