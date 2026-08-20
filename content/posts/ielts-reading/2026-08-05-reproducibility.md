@@ -36,32 +36,24 @@ Four laboratories tested the same rhodium-based catalyst using agreed protocols,
 
 **1. Why did the researchers ask four laboratories to test the same catalyst?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 They wanted to measure how reproducible the experimental data would be when independent laboratories followed the same agreed protocol. This matters because machine-learning models require consistent training data.
-
-</details>
+{{< /answer >}}
 
 **2. Why were the initial results unsuitable for training a reliable AI model?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 The four laboratories produced different amounts of carbon monoxide and methane under nominally similar conditions. A model trained on contradictory outcomes would have difficulty learning a reliable relationship between conditions and catalyst performance.
-
-</details>
+{{< /answer >}}
 
 **3. What was one important source of variability between the laboratories?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 The teams found several small procedural differences. One of the largest contributors was how strongly the experimental mixture was shaken or stirred.
-
-</details>
+{{< /answer >}}
 
 **4. How can better reproducibility accelerate AI-driven catalyst development?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Standardized, trustworthy data lets AI models predict catalyst performance under many conditions. Researchers can then validate the most promising predictions with fewer carefully chosen experiments, saving time and cost.
-
-</details>
+{{< /answer >}}
