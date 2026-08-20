@@ -38,40 +38,30 @@ An MIT study found that AI explanations can affect users differently depending o
 
 **1. Why did AI explanations affect clinicians and non-experts differently?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Clinicians could use medical knowledge and prior experience to challenge the model's output. Non-experts had fewer independent signals for evaluating the advice and were therefore more likely to use the explanation itself as evidence that the AI was correct.
-
-</details>
+{{< /answer >}}
 
 **2. Why were non-experts sometimes more confident even when their AI-assisted answers were wrong?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 LLM explanations could sound coherent and convincing even when the underlying diagnosis was incorrect. This increased trust in the recommendation without necessarily increasing its accuracy.
-
-</details>
+{{< /answer >}}
 
 **3. What is algorithmic deference?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 It is the tendency to give excessive weight to an algorithm's recommendation instead of independently evaluating whether the recommendation is supported by the available evidence.
-
-</details>
+{{< /answer >}}
 
 **4. Why might forming an independent hypothesis before seeing AI advice reduce automation bias?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Making an initial judgment forces the user to process the evidence independently. The AI recommendation then becomes something to compare against rather than the anchor that determines the user's first interpretation.
-
-</details>
+{{< /answer >}}
 
 **5. Why is a one-size-fits-all approach unsuitable for explainable AI?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 The same explanation can help an expert while misleading a beginner. AI interfaces therefore need to account for the user's knowledge level and encourage appropriate scrutiny rather than automatic trust.
-
-</details>
+{{< /answer >}}
