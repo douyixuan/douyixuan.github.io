@@ -38,40 +38,30 @@ MIT researchers combined ultrafast X-rays with laser heating to observe how heat
 
 **1. Why is heat management becoming more difficult as chips become more powerful?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 More transistors are packed into smaller areas. As the components operate close together, they generate concentrated heat that must be removed efficiently to prevent performance and reliability problems.
-
-</details>
+{{< /answer >}}
 
 **2. What limitation do traditional optical techniques have when studying multilayer devices?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Optical methods cannot easily distinguish heat transport in layers buried beneath the surface. They often provide an averaged signal instead of showing what happens in each individual layer.
-
-</details>
+{{< /answer >}}
 
 **3. How do the laser and X-rays work together in the new technique?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Laser pulses heat the sample while ultrafast X-rays penetrate its layers and measure structural changes as the heat spreads. Combining the measurements reveals heat movement across space and interfaces in real time.
-
-</details>
+{{< /answer >}}
 
 **4. What effect did the wrinkle defect have on heat transport?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 The researchers measured roughly a fourfold reduction in heat dissipation across the wrinkle and found that the defect also made heat spread unevenly in different directions.
-
-</details>
+{{< /answer >}}
 
 **5. How could this technique help semiconductor engineers?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 It can reveal where geometry, interfaces, and defects block heat in realistic multilayer devices, giving engineers direct measurements they can use to design better thermal layouts and avoid local hotspots.
-
-</details>
+{{< /answer >}}
