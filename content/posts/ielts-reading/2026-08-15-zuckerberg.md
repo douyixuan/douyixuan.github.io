@@ -36,40 +36,30 @@ Zuckerberg argues that advanced AI should primarily empower individuals rather t
 
 **1. Why does Zuckerberg argue that advanced AI should be widely accessible?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 He argues that broad access allows individuals to use advanced AI to create, learn, build businesses, and pursue their own goals instead of leaving most of the technology's capabilities under the control of a few large institutions.
-
-</details>
+{{< /answer >}}
 
 **2. Why does he emphasize invention rather than only automation?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 Automation focuses on performing existing work more efficiently or replacing tasks. Zuckerberg's broader claim is that AI can expand what individuals are capable of creating, allowing new products, ideas, and activities that did not previously exist.
-
-</details>
+{{< /answer >}}
 
 **3. How could widespread access to AI affect the balance of power?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 In his argument, giving powerful tools to many individuals reduces the risk that governments or a small number of companies become the only actors capable of using advanced AI. Broad access therefore acts as a counterweight to institutional concentration.
-
-</details>
+{{< /answer >}}
 
 **4. Does broad access to AI necessarily mean its economic benefits will be broadly distributed?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 No. Broad technical access can create more opportunities, but equal access to a tool does not automatically produce equal ownership, income, compute resources, market power, or bargaining power. The claim therefore depends on additional assumptions about institutions and how economic gains are distributed.
-
-</details>
+{{< /answer >}}
 
 **5. What is an important distinction between the article's claims and its assumptions?**
 
-<details><summary><strong>Reference answer</strong></summary>
-
+{{< answer >}}
 The article can plausibly argue that AI gives individuals new capabilities. A stronger conclusion — that this will automatically produce broadly shared prosperity or a healthier balance of power — requires assumptions about competition, access, regulation, ownership, and economic institutions that are not established simply by making AI available.
-
-</details>
+{{< /answer >}}
