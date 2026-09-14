@@ -23,6 +23,9 @@ menu:
     - name: Daily IELTS Reading
       url: posts/ielts-reading/
       weight: 2
+    - name: AI 原生芯片与工具链
+      url: posts/ai-silicon-papers/
+      weight: 3
     - name: Search
       url: search/
       weight: 5
