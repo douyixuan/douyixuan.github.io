@@ -43,6 +43,8 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
+      - name: Validate IELTS publication contract
+        run: python3 scripts/check_ielts_reading.py
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
