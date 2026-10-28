@@ -26,6 +26,9 @@ menu:
     - name: AI 原生芯片与工具链
       url: posts/ai-silicon-papers/
       weight: 3
+    - name: Second Brain
+      url: second-brain/
+      weight: 4
     - name: Search
       url: search/
       weight: 5
