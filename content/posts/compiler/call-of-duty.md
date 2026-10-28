@@ -3,7 +3,7 @@ title:     'Call of Duty'
 date:      2024-04-25T09:55:49+08:00
 author:    Cedric
 draft:     true
-summary: "待补充：本文摘要"
+summary: "围绕遗留代码的演进，记录 GraalVM 的 AOT 与 JIT 服务化、MirageOS 专用化及编译器服务化的思路。"
 categories:
   - compiler
 tags:

@@ -3,7 +3,7 @@ title:     'Gpu Simt Arch'
 date:      2025-07-29T18:52:07+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "梳理 NVIDIA GPU 的 CUDA Core、Warp、Thread Block 与 SM，介绍线程调度、分支发散、寄存器及共享内存管理。"
 categories:
   - compiler
 tags:

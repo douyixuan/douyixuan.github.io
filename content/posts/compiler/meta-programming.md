@@ -3,7 +3,7 @@ title:     'Meta Programming'
 date:      2025-05-07T11:31:30+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "通过宏、反射、元类、装饰器、模板和 AST 等示例，介绍代码生成与元编程的常见方式及其维护成本。"
 categories:
   - compiler
 tags:

@@ -3,7 +3,7 @@ title:     'Triton Matmul Digest'
 date:      2025-07-24T20:26:28+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "结合 Triton 矩阵乘法示例，解析 K 维分块累加、指针广播、内存访问以及 program 与 grid 的分工。"
 categories:
   - compiler
 tags:

@@ -3,7 +3,7 @@ title:     'Learn Vimscript on Exercism'
 date:      2024-04-26T17:43:14+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "使用 Exercism CLI 下载、练习和提交 Vimscript 题目，并了解其采用的 Vader 测试工具。"
 categories: vimbyexample
 tags:
   - vimbyexample

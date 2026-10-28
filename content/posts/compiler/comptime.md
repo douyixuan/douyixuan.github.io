@@ -3,7 +3,7 @@ title:     'Comptime'
 date:      2025-01-19T15:36:51+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "通过结构体字段求和示例，理解 Zig comptime 的编译期计算、反射与代码生成能力。"
 categories:
   - compiler
 tags:

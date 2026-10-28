@@ -3,7 +3,7 @@ title:     'Docker Desktop Alternative'
 date:      2024-12-21T23:11:08+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "比较 macOS 上 Docker Desktop、Lima 与 OrbStack 的使用取舍，并记录 OrbStack 安装、数据迁移及 Docker context 切换方法。"
 categories:
   - docker
 tags:

@@ -3,6 +3,8 @@ title:     'CUDA 软件栈测试方法论：从 Differential Testing 到 GPU Com
 date:      2026-09-11T18:40:00+08:00
 author:    Cedric
 draft:     false
+_build:
+  list: never
 summary: "从 CUDA 软件栈测试全貌出发，给出一套面向 Triton/GPU Compiler 的 fuzz 选型与可落地方案：Hypothesis 生成合法程序，Reference/Differential 作为 oracle，Compute Sanitizer 检查内存与并发，mlir-reduce 自动缩减失败用例。"
 categories:
   - compiler

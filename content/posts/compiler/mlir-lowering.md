@@ -3,7 +3,7 @@ title:     'Mlir Lowering'
 date:      2025-07-25T17:19:12+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "按结构化操作、矩阵运算、归约与变换分类，梳理 MLIR Linalg 经 Bufferization 和循环表示降级到 LLVM IR 的过程。"
 categories:
   - compiler
 tags:

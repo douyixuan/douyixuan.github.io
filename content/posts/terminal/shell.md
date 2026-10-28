@@ -3,7 +3,7 @@ title:     'Shell'
 date:      2025-03-23T23:09:47+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "对比 Bash、Zsh 与 Fish 的交互特性、配置方式和脚本语法，整理变量、循环、函数及通配符等常用操作。"
 categories:
   - terminal
 tags:

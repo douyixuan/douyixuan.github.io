@@ -3,7 +3,7 @@ title:     'Attention'
 date:      2025-07-10T15:24:31+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "拆解缩放点积注意力的 Q、K、V 与矩阵维度，并用 Python 示例说明 Embedding、Prefill、逐 token 推理和 KV Cache。"
 categories:
   - deeplearning
 tags:
