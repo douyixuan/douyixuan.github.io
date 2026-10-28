@@ -3,7 +3,7 @@ title:     'Lazyvim'
 date:      2024-12-11T18:12:02+08:00
 author:    Cedric
 draft:     true
-summary: "待补充：本文摘要"
+summary: "记录在 macOS 上开始使用 Neovim 与 LazyVim 的配置体验，包括终端选择、编辑器布局和 leader 键。"
 categories:
   - lazyvim
 tags:

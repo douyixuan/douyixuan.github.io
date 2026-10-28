@@ -3,7 +3,7 @@ title:     'Mlir Affine'
 date:      2025-07-10T10:47:28+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "从仿射变换的直观含义出发，介绍 MLIR Affine 方言如何表达循环与访存，以及其在循环优化中的作用。"
 categories:
   - compiler
 tags:

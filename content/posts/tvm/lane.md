@@ -3,7 +3,7 @@ title:     'Lane'
 date:      2025-11-25T17:55:38+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "从 SIMD 寄存器理解 TVM TIR 的 lanes，结合 Ramp、Broadcast、Shuffle 与 GPU warp lane 说明向量表达和访存。"
 categories:
   - tvm
 tags:

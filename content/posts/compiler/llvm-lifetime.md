@@ -3,7 +3,7 @@ title:     'LLVM Lifetime'
 date:      2024-07-17T17:48:26+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "梳理 LLVM IR 中栈、全局与堆内存的生命周期，以及 SSA 值和 lifetime intrinsics 的作用。"
 categories:
   - compiler
 tags:

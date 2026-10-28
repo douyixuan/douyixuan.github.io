@@ -3,7 +3,7 @@ title:     'Pgo'
 date:      2025-02-27T15:46:03+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "梳理 Clang PGO 的插桩、运行数据采集与反馈编译流程，结合示例说明 LLVM 如何利用 profile 优化代码。"
 categories:
   - compiler
 tags:

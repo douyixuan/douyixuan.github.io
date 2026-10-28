@@ -3,7 +3,7 @@ title:     'Softmax'
 date:      2025-08-26T14:01:30+08:00
 author:    Cedric
 draft:     true
-summary: "待补充：本文摘要"
+summary: "梳理数值稳定 Softmax 与在线更新公式，解释最大值变化时的累积和缩放，以及最终归一化过程。"
 categories:
   - deeplearning
 tags:

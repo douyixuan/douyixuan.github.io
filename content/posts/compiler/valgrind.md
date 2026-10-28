@@ -3,7 +3,7 @@ title:     'Valgrind'
 date:      2025-02-27T11:42:59+08:00
 author:    Cedric
 draft:     false
-summary: "待补充：本文摘要"
+summary: "通过 C 内存泄漏示例介绍 Valgrind Memcheck 的使用，说明如何阅读泄漏报告、定位分配点并修复问题。"
 categories:
   - compiler
 tags:
