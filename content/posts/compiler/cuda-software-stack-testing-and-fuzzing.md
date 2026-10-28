@@ -3,6 +3,8 @@ title:     'CUDA 软件栈测试方法论：从 Differential Testing 到 GPU Com
 date:      2026-09-11T18:41:00+08:00
 author:    Cedric
 draft:     false
+aliases:
+  - /posts/compiler/cuda-stack-testing-and-fuzzing/
 summary: "从 CUDA 软件栈测试全貌出发，给出一套面向 Triton/GPU compiler 的 fuzz 测试选型、架构、CI 分层和落地方案。"
 categories:
   - compiler
