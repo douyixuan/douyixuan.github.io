@@ -26,3 +26,10 @@ Reference: https://anthonymorris.dev/second-brain. Adopt its restrained editoria
 - Keep the navigation label short; the full site title remains available to search engines and the browser.
 - Design at 375px mobile width first. Do not shrink body text below 16px for long-form reading.
 - CSS tokens and overrides live only in `assets/css/extended/theme.css` to prevent per-section drift.
+
+## Non-redundant editorial headings
+
+- A section heading identifies the series once; its description should be one short sentence, not a second paragraph saying the same thing.
+- Digest cards display a concise subject in the title and the date only in metadata.
+- Future daily generated posts should set `display_title` to a subject-led heading (ideally 12–30 characters); maintain permalinks and existing publication metadata.
+- Older AI Native Digest posts without `display_title` derive a display heading from the first clause of their summary. The same partial is used on listings and article pages.
