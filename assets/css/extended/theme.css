@@ -263,3 +263,8 @@ body {
     margin-bottom: 20px;
   }
 }
+
+/* The section's H1 and main navigation already communicate its position. */
+.page-header .breadcrumbs {
+  display: none;
+}
