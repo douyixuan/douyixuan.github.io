@@ -17,13 +17,13 @@ markup:
 
 menu:
   main:
-    - name: AI Native Digest
+    - name: AI Native
       url: posts/ai-native/
       weight: 1
-    - name: Daily IELTS Reading
+    - name: IELTS
       url: posts/ielts-reading/
       weight: 2
-    - name: AI 原生芯片与工具链
+    - name: Papers
       url: posts/ai-silicon-papers/
       weight: 3
     - name: Second Brain
@@ -49,6 +49,8 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Cedric's lab notes on compiler, GPU kernels, MLIR, Triton, and TVM."
   author: Cedric
+  label:
+    text: "Cedric / 兜忆轩"
 
   defaultTheme: auto
   # disableThemeToggle: true
