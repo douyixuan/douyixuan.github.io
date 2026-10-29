@@ -1,3 +1,15 @@
-{{- /* Keep editorial subject in the heading; date and series already appear in navigation/meta. */ -}}
-{{- $title := replaceRE "^Daily IELTS Reading [0-9]{4}-[0-9]{2}-[0-9]{2}[[:space:]]*[—–:-][[:space:]]*" "" .Title -}}
+{{- /* One editorial title; do not repeat section/date already shown in the page chrome. */ -}}
+{{- $title := .Title -}}
+{{- if .Params.display_title -}}
+  {{- $title = .Params.display_title -}}
+{{- else -}}
+  {{- $title = replaceRE "^Daily IELTS Reading [0-9]{4}-[0-9]{2}-[0-9]{2}[[:space:]]*[—–:-][[:space:]]*" "" $title -}}
+  {{- /* Older daily digests have date-only titles: use a subject-led summary until backfilled. */ -}}
+  {{- if gt (len (findRE "^AI Native Digest [0-9]{4}-[0-9]{2}-[0-9]{2}$" $title)) 0 -}}
+    {{- with .Params.summary -}}
+      {{- $lead := index (split (plainify .) "；") 0 -}}
+      {{- $title = truncate 54 $lead -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- $title -}}
