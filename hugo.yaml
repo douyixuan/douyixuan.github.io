@@ -18,12 +18,15 @@ markup:
 menu:
   main:
     - name: AI Native
+      identifier: posts/ai-native
       url: posts/ai-native/
       weight: 1
     - name: IELTS
+      identifier: posts/ielts-reading
       url: posts/ielts-reading/
       weight: 2
     - name: Papers
+      identifier: posts/ai-silicon-papers
       url: posts/ai-silicon-papers/
       weight: 3
     - name: Second Brain
