@@ -1,9 +1,7 @@
 ---
 title: "AI Native Digest"
-description: "每日精选两篇 AI-native 工程文章，关注 agents、coding agents、context engineering、agentic workflows 与 software factories。"
-summary: "每日精选两篇 AI-native 工程文章。"
+description: "每天两篇原创工程精选，重点记录证据、方法与值得思考的问题。"
+summary: "每日两篇 AI-native 工程文章。"
 cascade:
   hiddenInHomeList: true
 ---
-
-聚焦 AI agent、coding agent、context engineering、agentic workflow、AI-native product 与 software factory。
