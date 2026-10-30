@@ -3,6 +3,7 @@
 - 仓库：douyixuan/douyixuan.github.io；发布分支 master；Hugo/PaperMod。
 - 专栏：content/posts/ai-silicon-papers/；地址 https://douyixuan.github.io/posts/ai-silicon-papers/ 。
 - 一篇论文一个日期文件 YYYY-MM-DD.md；日期采用 Asia/Shanghai，不能设置为未来时间而导致 Hugo 跳过。paper_id 使用不含版本后缀的 arXiv ID，重复运行先检查日期与 paper_id。
+- 标题保留连续三位编号（如 `045 · 标题`）；根据已收录文章核对下一编号，`title` 与 `display_title` 均须包含同一编号。缩短展示标题不能删掉编号；发布前同时检查文章页和专栏列表。
 - 每次选择一篇：AI for Silicon/EDA、AI 编译器与 GPU kernel 工具链、规格/形式化验证/评测、领域知识与 Agent 工作流。优先近期可免费阅读全文的论文，无合适新作可选未收录经典。
 - 核对标题、作者、日期、版本和论文类型。必须阅读一手来源，不能仅凭标题或二手摘要写导读。区分论文实证、作者预测、编辑推论和未运行的实验设计。
 - 固定结构：论文卡片（含 alphaXiv、arXiv、全文/PDF）、一个核心问题、简短中文导读、证据与限制、重点阅读章节、思想启发、三个开放性思考问题（思考线索用 details 折叠）。
