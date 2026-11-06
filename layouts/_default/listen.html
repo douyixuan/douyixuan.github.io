@@ -1,0 +1,46 @@
+{{- define "main" -}}
+{{- $source := site.GetPage "/posts/ielts-reading/2026-11-02" -}}
+{{- if $source -}}
+<article class="listen-page">
+  <header class="listen-heading">
+    <a class="listen-return" href="{{ $source.RelPermalink }}">← 返回原文与练习</a>
+    <p class="listen-eyebrow">DAILY IELTS · 听读试点 · 2026-11-02</p>
+    <h1>How light can vaporize water without the need for heat</h1>
+    <p>先听英文原文。听不懂时，可暂停、倒回一段，或展开本节中文理解提示。</p>
+  </header>
+  <section class="listen-player" aria-label="英文原文听读">
+    <div class="listen-progress-line"><span id="listen-count">正在准备全文…</span><span id="listen-state" aria-live="polite">待播放</span></div>
+    <progress id="listen-progress" value="0" max="1" aria-label="阅读进度"></progress>
+    <p id="listen-chapter" class="listen-chapter">原文</p>
+    <div class="listen-stage"><p id="listen-text" class="listen-text">正在从 11 月 2 日文章读取原文。</p></div>
+    <div class="listen-controls">
+      <button id="listen-prev" type="button" aria-label="上一段">← 上一段</button>
+      <button id="listen-play" type="button" class="listen-primary" aria-label="播放英文">播放</button>
+      <button id="listen-next" type="button" aria-label="下一段">下一段 →</button>
+    </div>
+    <div class="listen-settings">
+      <label for="listen-rate">语速</label>
+      <select id="listen-rate"><option value="0.8">0.8×</option><option value="1" selected>1.0×</option><option value="1.2">1.2×</option></select>
+      <label for="listen-jump">章节</label>
+      <select id="listen-jump" aria-label="跳转章节"></select>
+    </div>
+    <details id="listen-help" class="listen-help">
+      <summary>听不懂？查看本节中文理解提示</summary>
+      <p id="listen-explanation"></p>
+      <p id="listen-terms"></p>
+      <button id="listen-help-audio" type="button">朗读中文提示</button>
+    </details>
+    <p id="listen-support" class="listen-support">本试点使用设备自带的网页语音朗读，适合前台听读；iPhone 锁屏、切到后台时可能中断，尚不支持可靠的锁屏音频播放。骑行中请通过耳机收听，停车后再操作屏幕。</p>
+  </section>
+  <footer class="listen-attribution">
+    <p>原文：David L. Chandler，MIT News，2024-04-23。全文由原博客文章复用，未另存或改写。</p>
+    <p><a href="https://news.mit.edu/2024/how-light-can-vaporize-water-without-heat-0423" rel="noopener noreferrer">MIT News 原文</a> · <a href="{{ $source.RelPermalink }}">完整阅读练习</a></p>
+    <p><a href="https://news.mit.edu/">Reprinted with permission of MIT News</a></p>
+  </footer>
+  <template id="listen-source">{{ $source.Content }}</template>
+  <script src="{{ "js/ielts-listen.js" | relURL }}" defer></script>
+</article>
+{{- else -}}
+<p>找不到 2026-11-02 原文。<a href="{{ "posts/ielts-reading/" | relURL }}">返回 IELTS 栏目</a></p>
+{{- end -}}
+{{- end -}}

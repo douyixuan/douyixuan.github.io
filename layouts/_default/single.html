@@ -27,6 +27,9 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
+    {{- if eq .File.Path "posts/ielts-reading/2026-11-02.md" }}
+    <p style="margin:12px 0 4px"><a href="{{ "posts/ielts-reading/2026-11-02/listen/" | relURL }}" style="display:inline-flex;padding:8px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;font-weight:600">▶ 进入纯净听读模式</a></p>
+    {{- end }}
   </header>
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}

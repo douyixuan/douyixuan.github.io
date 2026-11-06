@@ -44,7 +44,9 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
       - name: Validate IELTS publication contract
-        run: python3 scripts/check_ielts_reading.py
+        run: |
+          python3 scripts/check_ielts_reading.py
+          python3 scripts/check_ielts_listen.py
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -54,3 +56,8 @@ jobs:
           hugo \
             --minify \
             --baseURL "https://douyixuan.github.io/"
+      - name: Verify listening pilot rendered route
+        run: |
+          test -f public/posts/ielts-reading/2026-11-02/listen/index.html
+          grep -q 'listen-source' public/posts/ielts-reading/2026-11-02/listen/index.html
+          grep -q '进入纯净听读模式' public/posts/ielts-reading/2026-11-02/index.html
