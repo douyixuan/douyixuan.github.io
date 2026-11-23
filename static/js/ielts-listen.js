@@ -74,6 +74,9 @@
     }
     for (const segment of makeClips(text)) {
       if (!firstOfChapter.has(chapter)) firstOfChapter.set(chapter, clips.length);
+      if (guides[chapter] && firstOfChapter.get(chapter) === clips.length) {
+        clips.push({ chapter, text: guides[chapter].idea, guide: true });
+      }
       clips.push({ chapter, text: segment });
     }
   }
@@ -83,7 +86,7 @@
     return;
   }
 
-  const storageKey = "ielts-listen-2026-11-02";
+  const storageKey = "ielts-listen-bilingual-2026-11-02";
   function load() {
     try { return JSON.parse(localStorage.getItem(storageKey) || "{}"); }
     catch (_) { return {}; }
@@ -117,7 +120,7 @@
     explanation.textContent = guides[clip.chapter]?.idea || "先听本段，再回到原文阅读练习核对。";
     terms.textContent = guides[clip.chapter]?.words || "";
     playButton.textContent = isPlaying ? "暂停" : "播放";
-    playButton.setAttribute("aria-label", isPlaying ? "暂停英文" : "播放英文");
+    playButton.setAttribute("aria-label", isPlaying ? "暂停朗读" : "播放朗读");
     prevButton.disabled = index === 0;
     nextButton.disabled = index === clips.length - 1;
     save();
@@ -142,9 +145,9 @@
     const token = ++playToken;
     synth.cancel();
     const utterance = new SpeechSynthesisUtterance(clips[index].text);
-    utterance.lang = "en-US";
+    utterance.lang = clips[index].guide ? "zh-CN" : "en-US";
     utterance.rate = Number(rateSelect.value);
-    const voice = englishVoice();
+    const voice = clips[index].guide ? null : englishVoice();
     if (voice) utterance.voice = voice;
     utterance.onend = () => {
       if (token !== playToken || !isPlaying) return;
@@ -163,7 +166,7 @@
       stop();
       state.textContent = "播放中断，请点击播放重试";
     };
-    state.textContent = "英文朗读中";
+    state.textContent = clips[index].guide ? "中文导读中" : "英文朗读中";
     synth.speak(utterance);
   }
 

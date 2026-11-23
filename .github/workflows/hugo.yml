@@ -64,6 +64,31 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Cache bilingual voice model
+        id: voice-model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/blog-voice/kokoro-multi-lang-v1_1
+          key: kokoro-v1.1-b78e1ac4
+      - name: Download bilingual voice model
+        if: steps.voice-model.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.cache/blog-voice
+          curl --fail --location --retry 3 https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_1.tar.bz2 -o "$RUNNER_TEMP/voice.tar.bz2"
+          echo "b78e1ac42b852e839cceaafbe88f66806bf5860992d1d7b9a3f2ad1198427aed  $RUNNER_TEMP/voice.tar.bz2" | sha256sum -c -
+          tar xf "$RUNNER_TEMP/voice.tar.bz2" -C ~/.cache/blog-voice
+      - name: Cache finished recordings
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/blog-recordings
+          key: recordings-${{ hashFiles('scripts/render_reading_audio.py', 'content/posts/ielts-reading/**') }}
+          restore-keys: recordings-
+      - name: Record IELTS audio editions
+        run: |
+          python3 -m venv "$RUNNER_TEMP/recording-env"
+          "$RUNNER_TEMP/recording-env/bin/pip" install sherpa-onnx==1.12.26 beautifulsoup4 numpy
+          command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+          "$RUNNER_TEMP/recording-env/bin/python" scripts/render_reading_audio.py public ~/.cache/blog-voice/kokoro-multi-lang-v1_1 ~/.cache/blog-recordings
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
