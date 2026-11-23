@@ -1,1 +1,6 @@
 {{ partial "mermaid/assets/js" . }}
+{{ if ne .Layout "listen" }}
+<button id="page-reader" type="button" hidden aria-live="polite">朗读本页</button>
+{{ $reader := resources.Get "js/page-reader.js" | fingerprint }}
+<script defer src="{{ $reader.RelPermalink }}"></script>
+{{ end }}
